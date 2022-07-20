@@ -20,7 +20,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "../dist",
+            "outputPath": "./dist",
             "index": "angular/src/index.html",
             "main": "angular/src/main.ts",
             "polyfills": "angular/src/polyfills.ts",

@@ -1,5 +1,5 @@
 const { join } = require('path');
-const RunChromeExtension = require('webpack-run-chrome-extension')
+const RunChromeExtension = require('webpack-run-chrome-extension');
 
 
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
     path: join(__dirname, '../dist'),
     filename: '[name].js'
   },
-  plugins: [new RunChromeExtension()],
+  plugins: [],
   resolve: {
     extensions: ['.ts', '.js']
   }

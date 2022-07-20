@@ -1,6 +1,6 @@
 const { join } = require('path');
 const { optimize } = require('webpack');
-const RunChromeExtension = require('webpack-run-chrome-extension')
+const RunChromeExtension = require('webpack-run-chrome-extension');
 
 module.exports = {
   mode: 'production',
@@ -21,7 +21,7 @@ module.exports = {
     path: join(__dirname, '../dist'),
     filename: '[name].js'
   },
-  plugins: [new RunChromeExtension(), new optimize.AggressiveMergingPlugin()],
+  plugins: [new optimize.AggressiveMergingPlugin()],
   resolve: {
     extensions: ['.ts', '.js']
   }
